@@ -101,7 +101,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
   Init_APP();
-  //LL_SYSTICK_EnableIT();
+  LL_SYSTICK_EnableIT();
 
   while (1)
   {
@@ -118,7 +118,6 @@ int main(void)
   * @retval None
   */
 void SystemClock_Config(void)
-
 {
   LL_FLASH_SetLatency(LL_FLASH_LATENCY_5);
 
@@ -127,15 +126,14 @@ void SystemClock_Config(void)
   Error_Handler();  
   }
   LL_PWR_SetRegulVoltageScaling(LL_PWR_REGU_VOLTAGE_SCALE1);
-  LL_RCC_HSI_SetCalibTrimming(16);
-  LL_RCC_HSI_Enable();
+  LL_RCC_HSE_Enable();
 
-   /* Wait till HSI is ready */
-  while(LL_RCC_HSI_IsReady() != 1)
+   /* Wait till HSE is ready */
+  while(LL_RCC_HSE_IsReady() != 1)
   {
     
   }
-  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSI, LL_RCC_PLLM_DIV_8, 168, LL_RCC_PLLP_DIV_2);
+  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE, LL_RCC_PLLM_DIV_4, 168, LL_RCC_PLLP_DIV_2);
   LL_RCC_PLL_Enable();
 
    /* Wait till PLL is ready */

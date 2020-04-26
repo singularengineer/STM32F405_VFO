@@ -10,6 +10,7 @@
 
 uint8_t tim4[] = "Tim 4: ";
 uint8_t newline[] = "\r\n";
+uint8_t USBstr[] = "USB Test...";
 uint32_t encoder4 = 0;
 uint32_t encoder3 = 0;
 uint8_t usbbuff[12];
@@ -25,6 +26,10 @@ void MainApp()
 	{
 		ticker = 0;
 		LL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+
+
+		//while((CDC_Transmit_FS(USBstr,strlen((char *)USBstr)) == USBD_BUSY));
+		//while((CDC_Transmit_FS("\r\n",2) == USBD_BUSY));
 //		encoder4 = TIM4->CNT>>2;
 //		encoder3 = TIM3->CNT>>2;
 //		//CDC_Transmit_FS(usbstr,strlen((char *)usbstr));
