@@ -94,18 +94,15 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-
+  Init_APP();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
-  Init_APP();
-  LL_SYSTICK_EnableIT();
-
   while (1)
   {
 	  MainApp();
+	  //LL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -121,7 +118,7 @@ void SystemClock_Config(void)
 {
   LL_FLASH_SetLatency(LL_FLASH_LATENCY_5);
 
-  if(LL_FLASH_GetLatency() != LL_FLASH_LATENCY_5)
+   if(LL_FLASH_GetLatency() != LL_FLASH_LATENCY_5)
   {
   Error_Handler();  
   }
@@ -133,7 +130,7 @@ void SystemClock_Config(void)
   {
     
   }
-  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE, LL_RCC_PLLM_DIV_4, 168, LL_RCC_PLLP_DIV_2);
+  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE, LL_RCC_PLLM_DIV_8, 168, LL_RCC_PLLP_DIV_2);
   LL_RCC_PLL_Enable();
 
    /* Wait till PLL is ready */
@@ -151,8 +148,8 @@ void SystemClock_Config(void)
   {
   
   }
-  LL_Init1msTick(168000000);
-  LL_SetSystemCoreClock(168000000);
+  LL_Init1msTick(84000000);
+  LL_SetSystemCoreClock(84000000);
 }
 
 /**
