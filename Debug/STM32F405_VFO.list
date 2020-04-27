@@ -421,7 +421,7 @@ __STATIC_INLINE void LL_RCC_PLL_ConfigDomain_SYS(uint32_t Source, uint32_t PLLM,
  80003c6:	4b15      	ldr	r3, [pc, #84]	; (800041c <SystemClock_Config+0xa0>)
  80003c8:	681a      	ldr	r2, [r3, #0]
   }
-  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE, LL_RCC_PLLM_DIV_8, 168, LL_RCC_PLLP_DIV_2);
+  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE, LL_RCC_PLLM_DIV_4, 168, LL_RCC_PLLP_DIV_2);
   LL_RCC_PLL_Enable();
 
    /* Wait till PLL is ready */
@@ -462,21 +462,21 @@ __STATIC_INLINE void LL_RCC_PLL_ConfigDomain_SYS(uint32_t Source, uint32_t PLLM,
   {
   
   }
-  LL_Init1msTick(84000000);
+  LL_Init1msTick(168000000);
  8000406:	4808      	ldr	r0, [pc, #32]	; (8000428 <SystemClock_Config+0xac>)
  8000408:	f7ff ff7c 	bl	8000304 <LL_Init1msTick>
-  LL_SetSystemCoreClock(84000000);
+  LL_SetSystemCoreClock(168000000);
  800040c:	4806      	ldr	r0, [pc, #24]	; (8000428 <SystemClock_Config+0xac>)
 }
  800040e:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-  LL_SetSystemCoreClock(84000000);
+  LL_SetSystemCoreClock(168000000);
  8000412:	f7ff bf85 	b.w	8000320 <LL_SetSystemCoreClock>
  8000416:	bf00      	nop
  8000418:	40023c00 	.word	0x40023c00
  800041c:	40023800 	.word	0x40023800
  8000420:	ffbf8000 	.word	0xffbf8000
- 8000424:	00402a08 	.word	0x00402a08
- 8000428:	0501bd00 	.word	0x0501bd00
+ 8000424:	00402a04 	.word	0x00402a04
+ 8000428:	0a037a00 	.word	0x0a037a00
 
 0800042c <main>:
   * @retval None
