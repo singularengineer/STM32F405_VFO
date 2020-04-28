@@ -42,22 +42,22 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc" />
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F4xx/Include" />
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" />
-								</option>
+								<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Core/Inc" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" /></option>
 								<option id="com.atollic.truestudio.gcc.symbols.defined.1670122205" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="USE_FULL_LL_DRIVER" />
-									<listOptionValue builtIn="false" value="HSE_VALUE=8000000" />
-									<listOptionValue builtIn="false" value="HSE_STARTUP_TIMEOUT=100" />
-									<listOptionValue builtIn="false" value="LSE_STARTUP_TIMEOUT=5000" />
-									<listOptionValue builtIn="false" value="LSE_VALUE=32768" />
-									<listOptionValue builtIn="false" value="EXTERNAL_CLOCK_VALUE=12288000" />
-									<listOptionValue builtIn="false" value="HSI_VALUE=16000000" />
-									<listOptionValue builtIn="false" value="LSI_VALUE=32000" />
-									<listOptionValue builtIn="false" value="VDD_VALUE=3300" />
-									<listOptionValue builtIn="false" value="PREFETCH_ENABLE=1" />
-									<listOptionValue builtIn="false" value="INSTRUCTION_CACHE_ENABLE=1" />
-									<listOptionValue builtIn="false" value="DATA_CACHE_ENABLE=1" />
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
 									<listOptionValue builtIn="false" value="STM32F405xx" />
-								</option>
+								<listOptionValue builtIn="false" value="USE_HAL_DRIVER" /></option>
 								<option id="com.atollic.truestudio.common_options.target.endianess.1854274048" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated" />
 								<option id="com.atollic.truestudio.common_options.target.mcpu.191909026" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F405RG" valueType="enumerated" />
 								<option id="com.atollic.truestudio.common_options.target.instr_set.1503159865" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated" />
@@ -92,22 +92,22 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc" />
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F4xx/Include" />
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" />
-								</option>
+								<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Core/Inc" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" /></option>
 								<option id="com.atollic.truestudio.gpp.symbols.defined.1619552487" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="USE_FULL_LL_DRIVER" />
-									<listOptionValue builtIn="false" value="HSE_VALUE=8000000" />
-									<listOptionValue builtIn="false" value="HSE_STARTUP_TIMEOUT=100" />
-									<listOptionValue builtIn="false" value="LSE_STARTUP_TIMEOUT=5000" />
-									<listOptionValue builtIn="false" value="LSE_VALUE=32768" />
-									<listOptionValue builtIn="false" value="EXTERNAL_CLOCK_VALUE=12288000" />
-									<listOptionValue builtIn="false" value="HSI_VALUE=16000000" />
-									<listOptionValue builtIn="false" value="LSI_VALUE=32000" />
-									<listOptionValue builtIn="false" value="VDD_VALUE=3300" />
-									<listOptionValue builtIn="false" value="PREFETCH_ENABLE=1" />
-									<listOptionValue builtIn="false" value="INSTRUCTION_CACHE_ENABLE=1" />
-									<listOptionValue builtIn="false" value="DATA_CACHE_ENABLE=1" />
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
 									<listOptionValue builtIn="false" value="STM32F405xx" />
-								</option>
+								<listOptionValue builtIn="false" value="USE_HAL_DRIVER" /></option>
 								<option id="com.atollic.truestudio.common_options.target.endianess.176262651" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated" />
 								<option id="com.atollic.truestudio.common_options.target.mcpu.630487808" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F405RG" valueType="enumerated" />
 								<option id="com.atollic.truestudio.common_options.target.instr_set.227324580" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated" />
@@ -191,22 +191,22 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc" />
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F4xx/Include" />
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" />
-								</option>
+								<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Core/Inc" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" /></option>
 								<option id="com.atollic.truestudio.gcc.symbols.defined.1670122205" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="USE_FULL_LL_DRIVER" />
-									<listOptionValue builtIn="false" value="HSE_VALUE=8000000" />
-									<listOptionValue builtIn="false" value="HSE_STARTUP_TIMEOUT=100" />
-									<listOptionValue builtIn="false" value="LSE_STARTUP_TIMEOUT=5000" />
-									<listOptionValue builtIn="false" value="LSE_VALUE=32768" />
-									<listOptionValue builtIn="false" value="EXTERNAL_CLOCK_VALUE=12288000" />
-									<listOptionValue builtIn="false" value="HSI_VALUE=16000000" />
-									<listOptionValue builtIn="false" value="LSI_VALUE=32000" />
-									<listOptionValue builtIn="false" value="VDD_VALUE=3300" />
-									<listOptionValue builtIn="false" value="PREFETCH_ENABLE=1" />
-									<listOptionValue builtIn="false" value="INSTRUCTION_CACHE_ENABLE=1" />
-									<listOptionValue builtIn="false" value="DATA_CACHE_ENABLE=1" />
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
 									<listOptionValue builtIn="false" value="STM32F405xx" />
-								</option>
+								<listOptionValue builtIn="false" value="USE_HAL_DRIVER" /></option>
 								<option id="com.atollic.truestudio.common_options.target.endianess.1854274048" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated" />
 								<option id="com.atollic.truestudio.common_options.target.mcpu.191909026" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F405RG" valueType="enumerated" />
 								<option id="com.atollic.truestudio.common_options.target.instr_set.1503159865" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated" />
@@ -241,22 +241,22 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc" />
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F4xx/Include" />
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" />
-								</option>
+								<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Core/Inc" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" /></option>
 								<option id="com.atollic.truestudio.gpp.symbols.defined.1619552487" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="USE_FULL_LL_DRIVER" />
-									<listOptionValue builtIn="false" value="HSE_VALUE=8000000" />
-									<listOptionValue builtIn="false" value="HSE_STARTUP_TIMEOUT=100" />
-									<listOptionValue builtIn="false" value="LSE_STARTUP_TIMEOUT=5000" />
-									<listOptionValue builtIn="false" value="LSE_VALUE=32768" />
-									<listOptionValue builtIn="false" value="EXTERNAL_CLOCK_VALUE=12288000" />
-									<listOptionValue builtIn="false" value="HSI_VALUE=16000000" />
-									<listOptionValue builtIn="false" value="LSI_VALUE=32000" />
-									<listOptionValue builtIn="false" value="VDD_VALUE=3300" />
-									<listOptionValue builtIn="false" value="PREFETCH_ENABLE=1" />
-									<listOptionValue builtIn="false" value="INSTRUCTION_CACHE_ENABLE=1" />
-									<listOptionValue builtIn="false" value="DATA_CACHE_ENABLE=1" />
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
 									<listOptionValue builtIn="false" value="STM32F405xx" />
-								</option>
+								<listOptionValue builtIn="false" value="USE_HAL_DRIVER" /></option>
 								<option id="com.atollic.truestudio.common_options.target.endianess.176262651" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated" />
 								<option id="com.atollic.truestudio.common_options.target.mcpu.630487808" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F405RG" valueType="enumerated" />
 								<option id="com.atollic.truestudio.common_options.target.instr_set.227324580" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated" />
@@ -344,4 +344,5 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders" />
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets" />
 </cproject>

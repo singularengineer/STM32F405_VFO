@@ -6,7 +6,7 @@
  */
 #include "App.h"
 #include "string.h"
-//#include "usbd_cdc_if.h"
+#include "usbd_cdc_if.h"
 
 uint8_t tim4[] = "Tim 4: ";
 uint8_t newline[] = "\r\n";
@@ -26,7 +26,7 @@ void MainApp()
 	{
 		ticker = 0;
 		LL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-
+		while((CDC_Transmit_FS(USBstr,strlen((char *)USBstr)) == USBD_BUSY));
 
 		//while((CDC_Transmit_FS(USBstr,strlen((char *)USBstr)) == USBD_BUSY));
 		//while((CDC_Transmit_FS("\r\n",2) == USBD_BUSY));
