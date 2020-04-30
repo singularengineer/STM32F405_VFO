@@ -26,7 +26,6 @@ volatile uint8_t dataAvailable;
 
  /* USER CODE BEGIN Prototypes */
 void MainApp();
-void Init_APP();
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
