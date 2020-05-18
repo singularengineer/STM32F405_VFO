@@ -1,8 +1,7 @@
 /*
  * App.h
  *
- *  Created on: Sep 1, 2019
- *      Author: Prem
+ * Author: Singular Engineer
  */
 
 #ifndef APP_H_

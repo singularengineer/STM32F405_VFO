@@ -1,8 +1,7 @@
 /*
  * App.c
  *
- *  Created on: Sep 15, 2019
- *      Author: Prem
+ * Author: Singular Engineer
  */
 #include "App.h"
 #include "string.h"
@@ -16,6 +15,7 @@ uint32_t M40_MAX = 7300000;
 uint32_t encoder = 0;
 int cursor_current = 0;
 uint32_t freqency_current = 7150000;
+uint32_t IncFactor = 1;
 char lcd_buff[16];
 char *lcd_ptr;
 
@@ -40,6 +40,7 @@ void UpdateCursor()
 	{
 		LCD_MoveCursor(0,cursor_temp);
 		cursor_current = cursor_temp;
+		IncFactor = pow(10,6 - cursor_current);
 	}
 }
 
@@ -53,9 +54,9 @@ void UpdateFreqency()
 		return;
 
 	if(freq_diff > 0)
-		freq_temp = freqency_current + (pow(10,6 - cursor_current));
+		freq_temp = freqency_current + IncFactor;
 	if(freq_diff < 0)
-		freq_temp = freqency_current - (pow(10,6 - cursor_current));
+		freq_temp = freqency_current - IncFactor;
 
 	if((freq_temp <= M40_MAX) && (freq_temp >= M40_MIN))
 	{
