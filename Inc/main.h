@@ -43,7 +43,8 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "LCD_I2C.h"
+#include "SI5351.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

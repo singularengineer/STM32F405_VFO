@@ -58,26 +58,23 @@ void LCD_Data(char data)
 
 void LCD_Init(void)
 {
+	LCD_Command (0x30);
 	HAL_Delay(50);
 	LCD_Command (0x30);
 	HAL_Delay(5);
-	LCD_Command (0x30);
-	HAL_Delay(1);
-	LCD_Command (0x30);
-	HAL_Delay(10);
 	LCD_Command (0x20);
 	HAL_Delay(10);
 
   	LCD_Command (0x28); // Function set --> DL=0 (4 bit mode), N = 1 (2 line display) F = 0 (5x8 characters)
-	HAL_Delay(1);
+	HAL_Delay(2);
 	LCD_Command (0x08); //Display on/off control --> D=0,C=0, B=0  ---> display off
-	HAL_Delay(1);
+	HAL_Delay(2);
 	LCD_Command (0x01);  // clear display
-	HAL_Delay(1);
+	HAL_Delay(2);
 	LCD_Command (0x06); //Entry mode set --> I/D = 1 (increment cursor) & S = 0 (no shift)
-	HAL_Delay(1);
+	HAL_Delay(2);
 	LCD_Command (0x0E); //Display on/off control --> D = 1, C =1 and B = 0. (Cursor and blink, last two bits)
-	HAL_Delay(1);
+	HAL_Delay(2);
 }
 
 void LCD_MoveCursor(int row, int col)

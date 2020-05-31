@@ -104,14 +104,10 @@ int main(void)
   TIM4->CNT = 0x3FFF; //set counter midpoint
 
   //char *str3 = "SingularEngineer";
-  //LCD_Init();
-  //while(*str3)
-  //  LCD_Data(*str3++);
-  //LCD_MoveCursor(1,8);
-  //LCD_Data(0x5E);
-  //void Clear_LCD();
-  LCD_ClearDisplay();
-
+  char *blank = "              ";
+  LCD_Init();
+  while(*blank)
+	  LCD_Data(*blank++);
 
   while (1)
   {

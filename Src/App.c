@@ -8,6 +8,7 @@
 #include "stdlib.h"
 #include <math.h>
 
+
 //BAND
 uint32_t M40_MIN = 7000000;
 uint32_t M40_MAX = 7300000;
@@ -21,7 +22,7 @@ char *lcd_ptr;
 
 void MainApp()
 {
-	if(ticker >= 100)
+	if(ticker >= LOOPSPEED)
 	{
 		ticker = 0;
 		if(!LL_GPIO_IsInputPinSet(EncoderSW_GPIO_Port,EncoderSW_Pin))
@@ -62,7 +63,8 @@ void UpdateFreqency()
 	{
 		LCD_MoveCursor(0,0);
 		lcd_ptr = itoa(freq_temp,(char *)lcd_buff,10);
-
+		SI5351_SetFrequency(freq_temp);
+		
 		while(*lcd_ptr)
 			LCD_Data(*lcd_ptr++);
 		LCD_MoveCursor(0,cursor_current);
